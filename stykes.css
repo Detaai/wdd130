@@ -1,0 +1,40 @@
+/* Limit the width of the main content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Style the aside section */
+  aside {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  /* Style the image inside aside */
+  aside img {
+    width: 200px;
+    height: auto;
+  }
+  
+  /* Ensure existing images in main are not affected */
+  main img {
+    width: 150px;
+    height: auto;
+  }
+  
+  /* Remove padding from paragraphs */
+  p {
+    padding: 0;
+  }
+  
+  /* Style the footer */
+  footer {
+    margin-top: 20px;
+    border-top: 2px solid #000;
+    text-align: center;
+  }
+  
