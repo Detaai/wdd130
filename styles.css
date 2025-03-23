@@ -1,74 +1,335 @@
 /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #CFCFB4; /* Soft Beige */
+    color: #173B4F;
 }
 
-/* Navigation */
-nav {
-  background-color: #333;
-  padding: 10px;
+/* Centered Page Layout */
+.page-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
+/* Header */
+header {
+    background: #264969; /* Deep Blue */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Heading 1 */
-h1 {
-  font-size: 24px;
-  text-align: center;
+.logo {
+    height: 60px;
 }
 
-/* Main Content */
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-main img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  display: block;
-  margin: 10px auto;
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Aside */
-aside {
-  width: 300px;
-  margin: 20px auto;
-  border: 1px solid #ccc;
-  padding: 15px;
-  background-color: #f4f4f4;
-  color: #333;
+.nav-menu .active, nav a:hover {
+    text-decoration: underline;
 }
 
-aside img {
-  width: 200px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #B4CDE4; /* Light Blue */
+    position: relative; /* Added for positioning */
 }
 
-/* Paragraphs */
-p {
-  padding: 0;
-  line-height: 1.6;
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    color: #505033;
+}
+
+.hero article {
+    position: absolute; /* Added for positioning */
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the article */
+    background: rgba(255, 255, 255, 0.8); /* Optional: Add background for readability */
+    padding: 20px; /* Optional: Add padding */
+    border-radius: 10px; /* Optional: Add border radius */
+}
+
+/* Sections */
+section {
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: center; /* Center the text */
+}
+
+.about-section {
+    background: #CFCFB4; /* Soft Beige */
+    text-align: center;
+    padding: 40px;
+    max-width: 800px; /* Keeps content centered */
+    margin: 20px auto; /* Centers the section */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1, 
+.about-section h2 {
+    color: #264969; /* Deep Blue for contrast */
+    margin-bottom: 15px;
+}
+
+.about-section p, 
+.about-section ul, 
+.about-section blockquote {
+    max-width: 600px; /* Ensures readable line length */
+    text-align: center;
+    line-height: 1.6;
+    padding-left: 20px; /* Add left padding */
+}
+
+.about-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-section ul li {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Styling for Testimonials */
+.testimonials {
+    background: #B4CDE4; /* Light Blue */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 700px;
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    font-size: 18px;
+    color: #173B4F;
+    margin: 10px 0;
+    padding-left: 20px; /* Add left padding */
+}
+
+/* Trip Cards */
+.trip-card {
+    background-color: #B4CDE4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.trip-card img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    background: #B4CDE4;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%; /* Ensure full width */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 20px; /* Add left padding */
+}
+
+.submit-btn {
+    background: #264969;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background: #505033;
+}
+
+/* Social Media */
+.social-media {
+    background: #B4CDE4;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 10px;
+    color: #264969;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none; /* Remove bullet points */
+}
+
+.social-links img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+}
+
+/* History Section */
+.history {
+    margin-top: 20px;
+    padding: 20px;
+    background: #B4CDE4; /* Light Blue */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.history h2 {
+    color: #264969; /* Deep Blue */
+    margin-bottom: 15px;
+}
+
+.history p {
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.6;
+    padding-left: 20px; /* Add left padding */
+}
+
+/* Team Section */
+.team {
+    margin-top: 20px;
+    padding: 20px;
+    background: #B4CDE4; /* Light Blue */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team h2 {
+    color: #264969; /* Deep Blue */
+    margin-bottom: 15px;
+}
+
+.team p {
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.6;
+    padding-left: 20px; /* Add left padding */
+}
+
+.team ul {
+    list-style: none;
+    padding: 0;
+}
+
+.team ul li {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Mission Section */
+.mission {
+    margin-top: 20px;
+    padding: 20px;
+    background: #B4CDE4; /* Light Blue */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission h2 {
+    color: #264969; /* Deep Blue */
+    margin-bottom: 15px;
+}
+
+.mission p {
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.6;
+    padding-left: 20px; /* Add left padding */
+}
+
+/* Adventure Section */
+.adventure-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.adventure-images img {
+    width: calc(33.333% - 10px); /* Adjust size as needed */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Footer */
 footer {
-  text-align: center;
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  margin-top: 20px;
-  border-top: 2px solid #555;
+    text-align: center;
+    background: #264969;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
 }
 

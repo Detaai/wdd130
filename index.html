@@ -1,33 +1,62 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caleb Jones | WDD 130</title>
-    <meta name="description" content="Caleb Jones' homepage for WDD 130. Writer, singer, poet, and storyteller.">
-    <meta name="author" content="Caleb Jones">
+    <meta name="description" content="Experience the thrill of whitewater rafting with our expert guides.">
+    <meta name="keywords" content="rafting, whitewater, adventure, outdoor, trips">
+    <title>Whitewater Rafting</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
+    <header class="site-header">
+        <img src="logo.png" alt="Rafting Company Logo" class="logo">
+        <nav class="nav-menu">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-    <main>
-        <h1>Arizona</h1>
-        <img src="images/arizona.jpg" alt="Scenic view of Arizona desert" width="200">
-        <p>Arizona is known for its breathtaking landscapes, including the Grand Canyon, red rock formations, and vast deserts. It has a warm climate and rich Native American history.</p>
+
+    <main class="page-container">
+        <section class="hero">
+            <img src="hero-rafting.jpg" alt="Rafting Adventure">
+            <h1>Experience the Thrill of Whitewater Rafting</h1>
+            <p>Join us for an unforgettable adventure.</p>
+            <a href="trips.html" class="btn">Explore Trips</a>
+        </section>
+
+        <section class="about">
+            <h2>About Us</h2>
+            <p>We are a team of passionate adventurers dedicated to providing thrilling and safe rafting experiences.</p>
+        </section>
+
+        <section class="trips">
+            <h2>Our Trips</h2>
+            <p>From beginner-friendly rapids to extreme adventures, we offer a variety of rafting trips.</p>
+            <a href="trips.html" class="btn">View Trips</a>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <blockquote><strong>"An amazing experience!</strong> The guides were professional and fun." - Sarah K.</blockquote>
+            <blockquote><strong>"A thrilling adventure that I will never forget!"</strong> - Mark T.</blockquote>
+        </section>
+
+        <section class="social-media">
+            <h2>Follow Us</h2>
+            <ul class="social-links">
+                <li><a href="https://facebook.com/whitewaterrafting" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://twitter.com/whitewaterraft" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                <li><a href="https://instagram.com/whitewaterrafting" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+        </section>
     </main>
-    <aside>
-        <h2>Caleb Jones | WDD 130</h2>
-        <img src="images/435315159_1091532182147844_2327815223836358291_n.jpg" alt="Hello, my name is Caleb Jones">
-        <p>My name is Caleb Jones. I'm a writer, singer, and poet, and will be publishing my first book soon! Storytelling and creativity have always been a big part of who I am, and I can't wait to share my work with the world.</p>
-    </aside>
-    <footer>
-        <p>&copy; 2025 🌎 Caleb Jones 🌎 Arizona</p>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Whitewater Rafting. All Rights Reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
     </footer>
-    <script async data-id="five-server" data-file="c:\Users\caveg\OneDrive\Desktop\wdd130\index.html" src="/fiveserver.js"></script>
 </body>
 </html>
