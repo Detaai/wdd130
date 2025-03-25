@@ -9,6 +9,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #CFCFB4; /* Soft Beige */
     color: #173B4F;
+    text-align: center; /* Center all text */
 }
 
 /* Centered Page Layout */
@@ -92,16 +93,19 @@ section {
     text-align: center; /* Center the text */
 }
 
-.about-section {
-    background: #CFCFB4; /* Soft Beige */
-    text-align: center;
+.about-section,
+.history,
+.team,
+.mission {
+    background: #B4CDE4; /* Light Blue */
+    text-align: center; /* Center the text */
     padding: 40px;
-    max-width: 800px; /* Keeps content centered */
-    margin: 20px auto; /* Centers the section */
+    max-width: 800px; /* Keeps content at a readable width */
+    margin: 20px auto; /* Centers the section on the page */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Center the text */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
