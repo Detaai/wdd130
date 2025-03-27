@@ -68,11 +68,10 @@ header {
 
 /* Hero Section */
 .hero {
-    text-align: center;
-    padding: 50px;
-    background-color: #B4CDE4;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    position: relative; /* Allows positioning of child elements */
+    text-align: center; /* Centers text horizontally */
+    padding: 50px 20px;
+    background-color: #B4CDE4; /* Optional: Add a background color */
 }
 
 .hero img {
@@ -80,47 +79,45 @@ header {
     max-height: 400px;
     object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 20px;
 }
 
 .hero h1 {
-    font-family: 'Georgia', serif;
-    font-weight: 700;
-    color: #505033;
+    position: absolute;
+    top: 50%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    color: white; /* Ensure text is readable */
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional: Add text shadow */
 }
 
 .hero article {
-    position: absolute; /* Added for positioning */
-    top: 50%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
-    transform: translate(-50%, -50%); /* Center the article */
-    background: rgba(255, 255, 255, 0.8); /* Optional: Add background for readability */
-    padding: 20px; /* Optional: Add padding */
-    border-radius: 10px; /* Optional: Add border radius */
+    position: absolute; /* Position it within the hero section */
+    top: 250%; /* Lower the article further into the middle of the hero image */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    text-align: center; /* Center the content inside the article */
+    background: rgba(255, 255, 255, 0.8); /* Optional: Add a background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
-.hero img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.hero article img {
+    width: 200px; /* Make the image slightly bigger */
+    height: 200px; /* Ensure the image is a square */
+    display: block; /* Ensure the image doesn't float */
+    margin: 0 auto 10px; /* Center the image and add spacing below it */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    object-fit: cover; /* Ensure the image fills the square without distortion */
 }
 
-.hero img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.hero img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.hero article p {
+    font-size: 1.2rem; /* Adjust font size for better readability */
+    line-height: 1.6;
+    color: #333;
+    margin: 0; /* Remove any default margins */
 }
 
 /* Sections */
@@ -444,4 +441,3 @@ aside p {
 /* Removed invalid HTML content */
 
 /* Removed invalid HTML content mistakenly placed in the CSS file */
-
