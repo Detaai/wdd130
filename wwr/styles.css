@@ -70,8 +70,9 @@ header {
 .hero {
     text-align: center;
     padding: 50px;
-    background-color: #B4CDE4; /* Light Blue */
-    position: relative; /* Added for positioning */
+    background-color: #B4CDE4;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .hero img {
@@ -96,6 +97,30 @@ header {
     background: rgba(255, 255, 255, 0.8); /* Optional: Add background for readability */
     padding: 20px; /* Optional: Add padding */
     border-radius: 10px; /* Optional: Add border radius */
+}
+
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 /* Sections */
@@ -248,6 +273,7 @@ input, textarea {
     justify-content: center;
     gap: 10px;
     list-style: none; /* Remove bullet points */
+    padding: 0;
 }
 
 .social-links img {
@@ -274,6 +300,8 @@ input, textarea {
     text-align: center;
     line-height: 1.6;
     padding-left: 20px; /* Add left padding */
+    position: relative;
+    left: 20px;
 }
 
 /* Team Section */
@@ -361,6 +389,29 @@ footer {
     color: white;
 }
 
+footer.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #264969;
+    color: white;
+}
+
+footer.site-footer p {
+    margin: 0;
+}
+
+footer.site-footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer.site-footer a:hover {
+    text-decoration: underline;
+}
+
 /* Class Selectors */
 .box {
     padding: 20px;
@@ -389,4 +440,8 @@ aside h2 {
 aside p {
     margin-top: 40px; /* Add margin to push the paragraph below the heading */
 }
+
+/* Removed invalid HTML content */
+
+/* Removed invalid HTML content mistakenly placed in the CSS file */
 
