@@ -438,6 +438,16 @@ aside p {
     margin-top: 40px; /* Add margin to push the paragraph below the heading */
 }
 
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 840px;
+}
+
 /* Removed invalid HTML content */
 
 /* Removed invalid HTML content mistakenly placed in the CSS file */
