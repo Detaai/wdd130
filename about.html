@@ -3,12 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn more about our team and history at Whitewater Rafting.">
+    <meta name="description" content="Experience the thrill of whitewater rafting with our expert guides. Join us for unforgettable adventures on the water.">
     <meta name="keywords" content="rafting, whitewater, adventure, team, history">
-    <title>About Us - Whitewater Rafting</title>
+    <meta name="author" content="Caleb Austin Jones">
+    <title>Caleb Austin Jones - WDD 130 - Whitewater Rafting</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        .box {
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        main img {
+            float: right;
+            margin: 0 0 10px 10px;
+        }
+        aside {
+            position: relative;
+            padding: 20px;
+            background-color: #e8f0fe;
+            border-radius: 5px;
+        }
+        aside h2 {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 50px 20px; /* Add padding to create space around the content */
+            background-color: #B4CDE4; /* Optional: Add a background color */
+        }
+
+        .hero img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <header class="site-header">
@@ -26,6 +65,7 @@
             <img src="hero.jpg" alt="Rafting Adventure">
             <h1>Whitewater Rafting</h1>
             <article>
+                <h2>Rafting Adventure</h2> <!-- Add a descriptive heading -->
                 <img src="hero-article.jpg" alt="Rafting">
                 <p>Experience the thrill of whitewater rafting with our expert guides.</p>
             </article>
@@ -40,7 +80,7 @@
             <h2>Adventure Awaits You</h2>
             <div class="adventure-images">
                 <img src="adventure1.jpg" alt="Adventure Image 1">
-                <img src="adventure2.jpg" alt="Adventure Image 2">
+                <img src="adventure2.webp" alt="Adventure Image 2">
                 <img src="adventure3.jpg" alt="Adventure Image 3">
             </div>
             <div class="adventure-images">
@@ -74,6 +114,15 @@
                 <li><a href="https://instagram.com/whitewaterrafting" target="_blank" rel="noopener noreferrer"><img src="instagram-icon.png" alt="Instagram"></a></li>
             </ul>
         </section>
+        <ul class="box">
+            <li>Explore our beginner-friendly rafting trips.</li>
+            <li>Challenge yourself with advanced whitewater adventures.</li>
+            <li>Join our eco-tours to learn about river conservation.</li>
+        </ul>
+        <aside class="box">
+            <h2>Additional Information</h2>
+            <p>Looking for more details? Check out our <a href="faq.html">FAQ page</a> or contact us directly for personalized assistance.</p>
+        </aside>
     </main>
 
     <footer class="site-footer">
@@ -94,5 +143,6 @@
         gtag('js', new Date());
         gtag('config', 'UA-XXXXX-Y');
     </script>
+    <!-- Last updated: March 27, 2025 -->
 </body>
 </html>
