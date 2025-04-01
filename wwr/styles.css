@@ -1,20 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-/* General Styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
-    font-family: 'Roboto', sans-serif; /* Default font for the body */
+    font-family: 'Roboto', sans-serif;
     background-color: #CFCFB4; /* Soft Beige */
-    color: #173B4F;
+    color: #173B4F; /* Dark Blue */
     text-align: center;
+    line-height: 1.6;
 }
 
+/* Links */
+a {
+    color: #264969;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* General Styles */
 img {
     width: 200px; /* Set a fixed width */
     height: 150px; /* Set a fixed height */
@@ -24,7 +37,7 @@ img {
     margin: 0 auto; /* Center images */
 }
 
-/* Centered Page Layout */
+/* Main Container */
 .page-container {
     max-width: 900px;
     margin: 50px auto;
@@ -36,46 +49,26 @@ img {
 
 /* Header */
 header {
-    background: #264969; /* Deep Blue */
+    background: #264969;
     color: white;
-    text-align: center;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.site-header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: 20px;
-    padding: 10px 20px;
-}
-
-.logo {
+header .logo {
     height: 60px;
-    grid-column: 1;
 }
 
 .nav-menu {
     display: flex;
-    justify-content: center;
     gap: 20px;
-    grid-column: 2;
-    display: flex;
-    justify-content: flex-end;
-    gap: 15px;
 }
 
 .nav-menu a {
     color: white;
-    text-decoration: none;
     font-weight: bold;
-}
-
-.nav-menu .active, nav a:hover {
-    text-decoration: underline;
 }
 
 /* Hero Section */
@@ -487,42 +480,18 @@ input, textarea {
 
 /* Footer */
 footer {
-    text-align: center;
     background: #264969;
     color: white;
     padding: 15px;
-    margin-top: 40px;
+    text-align: center;
 }
 
-.site-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: #264969;
-    color: white;
-}
-
-footer.site-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: #264969;
-    color: white;
-}
-
-footer.site-footer p {
-    margin: 0;
-}
-
-footer.site-footer a {
+footer a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
 }
 
-footer.site-footer a:hover {
+footer a:hover {
     text-decoration: underline;
 }
 
