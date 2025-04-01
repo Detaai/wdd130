@@ -15,6 +15,15 @@ body {
     text-align: center;
 }
 
+img {
+    width: 200px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image fills the dimensions without distortion */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    display: block; /* Prevent inline spacing issues */
+    margin: 0 auto; /* Center images */
+}
+
 /* Centered Page Layout */
 .page-container {
     max-width: 900px;
@@ -369,6 +378,111 @@ input, textarea {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+/* Employee Section */
+.employee-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Optional: Add a light background */
+}
+
+.employee-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center the employee cards */
+    gap: 20px; /* Add spacing between cards */
+}
+
+.employee-card {
+    background-color: #ffffff; /* White background for each card */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+    padding: 20px;
+    text-align: center; /* Center the content inside the card */
+    width: 250px; /* Set a fixed width for each card */
+    display: flex;
+    flex-direction: column; /* Stack the image and text vertically */
+    align-items: center; /* Center the content horizontally */
+}
+
+.employee-card img {
+    width: 100px; /* Set a fixed size for the image */
+    height: 100px; /* Make the image a square */
+    object-fit: cover; /* Ensure the image fills the square without distortion */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 10px; /* Add spacing below the image */
+}
+
+.employee-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #264969; /* Optional: Add a color for the name */
+}
+
+.employee-info p {
+    font-size: 1rem;
+    color: #666; /* Optional: Add a lighter color for the role */
+    margin: 0; /* Remove default margins */
+}
+
+/* Employee Gallery */
+.employee-gallery img {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height to make them square */
+    object-fit: cover; /* Ensure the image fills the square without distortion */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    margin-bottom: 10px; /* Add spacing below the image */
+}
+
+/* Additional Images */
+.additional-images img {
+    width: 200px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image fills the dimensions without distortion */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    margin-bottom: 10px; /* Add spacing below the image */
+}
+
+/* Explore More Section */
+.additional-images {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Optional: Add a light background */
+}
+
+.additional-images h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #264969; /* Optional: Add a color for the heading */
+}
+
+.image-gallery {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Add spacing between items */
+    justify-items: center; /* Center items horizontally */
+    align-items: start; /* Align items to the top */
+}
+
+.image-gallery figure {
+    text-align: center; /* Center the content inside each figure */
+    margin: 0; /* Remove default margins */
+}
+
+.image-gallery img {
+    width: 200px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image fills the dimensions without distortion */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.image-gallery figcaption {
+    margin-top: 10px; /* Add spacing above the caption */
+    font-size: 1rem;
+    color: #666; /* Optional: Add a lighter color for the caption */
 }
 
 /* Footer */
