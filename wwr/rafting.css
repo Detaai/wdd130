@@ -195,19 +195,48 @@ section {
 
 /* Trip Cards */
 .trip-card {
-    background-color: #B4CDE4;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 
 .trip-card img {
     width: 100%;
-    max-width: 500px;
+    max-width: 300px;
     height: auto;
     border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.trip-card h2 {
+    font-size: 1.5rem;
     margin-bottom: 10px;
+}
+
+.trip-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.trip-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #264969;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.trip-card .btn:hover {
+    background-color: #173b4f;
 }
 
 /* Contact Form */
@@ -251,11 +280,24 @@ input, textarea {
 
 /* Social Media */
 .social-media {
-    background: #B4CDE4;
-    text-align: center;
-    padding: 20px;
-    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Add spacing between social media links */
     margin-top: 20px;
+}
+
+.social-media a {
+    text-align: center; /* Center-align the content inside each link */
+    text-decoration: none; /* Remove underline from links */
+    color: #264969; /* Set text color */
+    font-size: 1rem;
+}
+
+.social-media a img {
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto 5px; /* Center the image and add spacing below it */
+    width: 30px; /* Reduce the width of the icons */
+    height: 30px; /* Reduce the height of the icons */
 }
 
 .social-media a {
@@ -285,8 +327,9 @@ input, textarea {
 
 /* History Section */
 .history {
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 20px; /* Add spacing above the section */
+    padding: 20px; /* Add padding inside the section */
+    text-align: left; /* Align text to the left */
     background: #B4CDE4; /* Light Blue */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -298,12 +341,12 @@ input, textarea {
 }
 
 .history p {
+    position: static; /* Remove the relative positioning */
+    margin: 20px 0; /* Add spacing above and below the paragraph */
+    line-height: 1.6; /* Improve readability */
     max-width: 600px;
     text-align: center;
-    line-height: 1.6;
     padding-left: 20px; /* Add left padding */
-    position: relative;
-    left: 20px;
 }
 
 /* Team Section */
@@ -545,3 +588,56 @@ aside p {
 /* Removed invalid HTML content */
 
 /* Removed invalid HTML content mistakenly placed in the CSS file */
+
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.call-to-action .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #264969;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.call-to-action .btn:hover {
+    background-color: #173b4f;
+}
+
+/* Trip Summary */
+.trip-summary {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.trip-summary table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.trip-summary th, .trip-summary td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.trip-summary th {
+    background-color: #264969;
+    color: white;
+}
+
+.trip-summary tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
