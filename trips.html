@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore our variety of whitewater rafting trips, from beginner-friendly rapids to extreme adventures.">
     <meta name="keywords" content="rafting, whitewater, adventure, trips, outdoor">
+    <meta name="author" content="Caleb Austin Jones">
     <title>Trips - Whitewater Rafting</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="stylesheet" href="rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
         <img src="logo.png" alt="Rafting Company Logo" class="logo">
         <nav class="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html" class="active">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="index.html" aria-label="Home">Home</a>
+            <a href="about.html" aria-label="About Us">About Us</a>
+            <a href="trips.html" class="active" aria-label="Trips">Trips</a>
+            <a href="contact.html" aria-label="Contact Us">Contact Us</a>
         </nav>
     </header>
 
@@ -27,21 +34,60 @@
             <img src="beginner-rafting.jpg" alt="Beginner Rapids">
             <h2>Beginner Rapids</h2>
             <p>A calm and scenic ride for families and first-time rafters.</p>
-            <a href="book.html" class="btn">Book Now</a>
+            <a href="https://www.youtube.com/watch?v=example1" class="btn" target="_blank">Book Now</a>
         </div>
 
         <div class="trip-card">
             <img src="intermediate-rafting.jpg" alt="Intermediate Rapids">
             <h2>Intermediate Rapids</h2>
             <p>More challenging waters for thrill-seekers.</p>
-            <a href="book.html" class="btn">Book Now</a>
+            <a href="https://www.youtube.com/watch?v=example2" class="btn" target="_blank">Book Now</a>
         </div>
 
         <div class="trip-card">
             <img src="advanced-rafting.jpg" alt="Advanced Rapids">
             <h2>Advanced Rapids</h2>
             <p>Intense and technical rapids for experienced rafters.</p>
-            <a href="book.html" class="btn">Book Now</a>
+            
+        </div>
+
+        <section class="trip-summary">
+            <h2>Trip Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip</th>
+                        <th>Difficulty</th>
+                        <th>Duration</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beginner Rapids</td>
+                        <td>Easy</td>
+                        <td>2 Hours</td>
+                        <td>$50</td>
+                    </tr>
+                    <tr>
+                        <td>Intermediate Rapids</td>
+                        <td>Moderate</td>
+                        <td>4 Hours</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Rapids</td>
+                        <td>Hard</td>
+                        <td>6 Hours</td>
+                        <td>$150</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="call-to-action">
+            <p>Ready to book your adventure? Contact us today!</p>
+            <a href="contact.html" class="btn">Contact Us</a>
         </div>
     </main>
 
@@ -49,9 +95,18 @@
         <p>&copy; 2025 Whitewater Rafting. All Rights Reserved.</p>
         <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
         <div class="social-media">
-            <a href="https://facebook.com/whitewaterrafting" target="_blank">Facebook</a>
-            <a href="https://twitter.com/whitewaterraft" target="_blank">Twitter</a>
-            <a href="https://instagram.com/whitewaterrafting" target="_blank">Instagram</a>
+            <a href="https://facebook.com/whitewaterrafting" target="_blank" aria-label="Facebook">
+                <img src="facebook-icon.png" alt="Facebook Icon">
+                Facebook
+            </a>
+            <a href="https://twitter.com/whitewaterraft" target="_blank" aria-label="Twitter">
+                <img src="twitter-icon.png" alt="Twitter Icon">
+                Twitter
+            </a>
+            <a href="https://instagram.com/whitewaterrafting" target="_blank" aria-label="Instagram">
+                <img src="instagram-icon.png" alt="Instagram Icon">
+                Instagram
+            </a>
         </div>
     </footer>
 </body>
