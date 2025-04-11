@@ -280,49 +280,41 @@ input, textarea {
 
 /* Social Media */
 .social-media {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Add spacing between social media links */
-    margin-top: 20px;
+    text-align: center; /* Center-align the entire section */
+    margin-top: 20px; /* Add spacing above the section */
 }
 
-.social-media a {
-    text-align: center; /* Center-align the content inside each link */
-    text-decoration: none; /* Remove underline from links */
-    color: #264969; /* Set text color */
-    font-size: 1rem;
-}
-
-.social-media a img {
-    display: block; /* Ensure the image is treated as a block element */
-    margin: 0 auto 5px; /* Center the image and add spacing below it */
-    width: 30px; /* Reduce the width of the icons */
-    height: 30px; /* Reduce the height of the icons */
-}
-
-.social-media a {
-    display: inline-block;
-    margin: 10px;
-    color: #264969;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.social-media a:hover {
-    text-decoration: underline;
+.social-media h2 {
+    margin-bottom: 20px; /* Add spacing below the heading */
+    font-size: 1.5rem; /* Adjust font size for the heading */
 }
 
 .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    list-style: none; /* Remove bullet points */
-    padding: 0;
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox to arrange items in a row */
+    justify-content: center; /* Center the icons horizontally */
+    gap: 20px; /* Add spacing between the icons */
 }
 
-.social-links img {
-    width: 30px; /* Adjust size as needed */
-    height: 30px; /* Adjust size as needed */
+.social-links li {
+    display: inline-block; /* Ensure each list item is inline */
+}
+
+.social-links a img {
+    width: 60px; /* Increase the width of the icons */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensure the entire logo fits within the dimensions */
+    border-radius: 0; /* Remove the circular shape */
+    transition: transform 0.3s ease; /* Add a hover effect */
+    padding: 5px; /* Add padding inside the image container */
+    background-color: rgba(255, 255, 255, 0); /* Optional: Add a background color for better visibility */
+    border: 1px solid #ccc; /* Optional: Add a border around the icons */
+}
+
+.social-links a img:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
 }
 
 /* History Section */
