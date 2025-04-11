@@ -280,7 +280,9 @@ input, textarea {
 
 /* Social Media */
 .social-media {
-    text-align: center; /* Center-align the entire section */
+    display: flex; /* Arrange icons in a horizontal row */
+    justify-content: center; /* Center the icons horizontally */
+    gap: 15px; /* Add spacing between the icons */
     margin-top: 20px; /* Add spacing above the section */
 }
 
@@ -295,7 +297,7 @@ input, textarea {
     margin: 0; /* Remove default margin */
     display: flex; /* Use flexbox to arrange items in a row */
     justify-content: center; /* Center the icons horizontally */
-    gap: 20px; /* Add spacing between the icons */
+    gap: 15px; /* Add spacing between the icons */
 }
 
 .social-links li {
@@ -303,17 +305,21 @@ input, textarea {
 }
 
 .social-links a img {
-    width: 60px; /* Increase the width of the icons */
-    height: auto; /* Maintain the aspect ratio */
+    width: 40px; /* Set the width of the icons */
+    height: 40px; /* Set the height of the icons */
     object-fit: contain; /* Ensure the entire logo fits within the dimensions */
     border-radius: 0; /* Remove the circular shape */
     transition: transform 0.3s ease; /* Add a hover effect */
-    padding: 5px; /* Add padding inside the image container */
-    background-color: rgba(255, 255, 255, 0); /* Optional: Add a background color for better visibility */
-    border: 1px solid #ccc; /* Optional: Add a border around the icons */
 }
 
-.social-links a img:hover {
+.social-media a img {
+    width: 40px; /* Set the width of the icons */
+    height: 40px; /* Set the height of the icons */
+    object-fit: contain; /* Ensure the entire logo fits within the dimensions */
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+.social-media a img:hover {
     transform: scale(1.1); /* Slightly enlarge the icon on hover */
 }
 
